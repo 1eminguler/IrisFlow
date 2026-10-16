@@ -1,0 +1,1 @@
+IrisFlow is an accessibility software that enables individuals with severe physical impairments of the hands and arms (such as ALS, advanced spinal cord injury, muscular dystrophy, etc.) to independently control a standard computer and a custom communication interface solely through iris movements, requiring no external hardware or head motion.
