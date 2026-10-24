@@ -1,0 +1,12 @@
+# Who reviews what. GitHub requests a review from these people automatically.
+# Fill in the GitHub usernames, then remove the leading "#" from the lines below.
+# (Owners are listed in README -> Team & Ownership.)
+#
+# /src/irisflow/engine/    @ENGINE_OWNER
+# /src/irisflow/core/      @APP_OWNER
+# /src/irisflow/ui/        @APP_OWNER
+# /src/irisflow/services/  @APP_OWNER
+#
+# Shared contract: both of us must look at changes here.
+# /src/irisflow/shared/    @ENGINE_OWNER @APP_OWNER
+# /src/irisflow/config.py  @ENGINE_OWNER @APP_OWNER
