@@ -17,6 +17,19 @@ venv/
 .venv/
 env/
 .pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.coverage
+htmlcov/
+build/
+dist/
+*.egg-info/
+
+# IrisFlow local data (never commit these)
+models/*.task
+recordings/
+calibration/
+*.local.json
 
 # Logs
 logs/

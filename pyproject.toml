@@ -1,0 +1,43 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "irisflow"
+version = "0.1.0"
+description = "Webcam-based eye/iris tracking accessibility software for people who cannot use their hands."
+readme = "README.md"
+# MediaPipe wheels lag behind new Python releases, 3.11 is the recommended version.
+requires-python = ">=3.10,<3.13"
+dependencies = [
+    "numpy>=1.26",
+    "opencv-python>=4.9",
+    "mediapipe>=0.10.14",
+    "PySide6>=6.6",
+    "pyttsx3>=2.90",
+    "pynput>=1.7",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.0",
+    "ruff>=0.6",
+]
+
+[project.scripts]
+irisflow = "irisflow.__main__:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"
+src = ["src", "tests"]
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "B", "UP", "SIM"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]
