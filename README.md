@@ -165,7 +165,7 @@ IrisFlow/
 | Shared (`shared/`, `config.py`) | Both | Changes need both approvals |
 | Integration & testing | Both | Real-world tuning, user tests, report, demo |
 
-Workflow rules (branches, PRs, commits): [CONTRIBUTING.md](CONTRIBUTING.md)
+Workflow rules (branches, PRs, commits): a `CONTRIBUTING.md` guide will be added later.
 
 ## Roadmap
 
